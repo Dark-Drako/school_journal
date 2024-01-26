@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: antiquewhite;
+  }
+
+  nav {
+    background-color: rgb(1, 112, 1);
+    height: 100px;
+    padding-top: 20px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  nav a {
+    display: flex;
+    color: white;
+    text-align: center;
+    margin-right: 20px;
+    text-decoration: none;
+    
+    
+  }
+
+  nav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .logo {
+    width: fit-content;
+    height: fit-content;
+    align-self: center; 
+    align-items: center;
+    padding-left: 40px;
+    display: flex;
+  }
+
+  .logo img {
+    border-radius: 50px;
+  }
+
+  .log-tit {
+    color: white;
+    margin-left: 20px;
+    font-weight: 900;
+    font-size: larger;
+  }
+
+  .wd-lk {
+    display: flex;
+    align-items: center;
+  }
+
+  .sch-pan {
+    display: flex;
+    align-items: center;
+    padding-right: 40px;
+    cursor: pointer;
+  }
+
+  .sch-pan img {
+    filter: invert(100%);
+    margin-right: 40px;
+  }
+
+
+  #sp {
+    align-self: center;
+    color: white;
+  }
+
+  #sp:hover{
+    text-decoration: underline;
+  }
+
+  #sign {
+    color: white;
+  }
+  
+  #sign:hover {
+    text-decoration: underline;
+  }
+
+  .wel {
+    background: url('./assets/images/kimberly-farmer-lUaaKCUANVI-unsplash.jpg') center center/cover no-repeat;
+    height: 400px; 
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+
+.wel::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(151, 147, 147, 0.5); 
+}
+
+.wel-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+}
+
+.wel-txt {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  color: white;
+  padding: 20px;
+  background: transparent; 
+}
